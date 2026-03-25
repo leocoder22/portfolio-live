@@ -1217,7 +1217,7 @@ function ContactSection({ darkMode }) {
     {
       title: "Resume",
       value: "Download CV",
-      link: "./public/projects/resume.pdf",
+      link: "/projects/resume.pdf",
     },
   ];
 
