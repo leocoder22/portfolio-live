@@ -1083,7 +1083,7 @@ function ProjectsSection({ darkMode }) {
     href={project.demo}
     target="_blank"
     rel="noopener noreferrer"
-    download={project.demo.endsWith(".apk")}
+    download={project.demo.endsWith(".apk") ? "📱 Download APK" : "🌐 Live Demo"}
     className={cn(
       "rounded-lg px-4 py-2 text-xs font-medium transition hover:scale-105",
       darkMode
