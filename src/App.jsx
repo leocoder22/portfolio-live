@@ -1079,31 +1079,32 @@ function ProjectsSection({ darkMode }) {
                 </a>
 
                 {project.demo ? (
-                  <a
-                    href={project.demo}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={cn(
-                      "rounded-lg px-4 py-2 text-xs font-medium transition hover:scale-105",
-                      darkMode
-                        ? "border border-sky-400/20 bg-sky-500/20 text-sky-300"
-                        : "bg-sky-600 text-white"
-                    )}
-                  >
-                    Live Demo
-                  </a>
-                ) : (
-                  <span
-                    className={cn(
-                      "rounded-lg px-4 py-2 text-xs font-medium opacity-70",
-                      darkMode
-                        ? "border border-white/10 bg-white/5 text-slate-400"
-                        : "bg-slate-100 text-slate-500"
-                    )}
-                  >
-                    Demo Soon
-                  </span>
-                )}
+  <a
+    href={project.demo}
+    target="_blank"
+    rel="noopener noreferrer"
+    download={project.demo.endsWith(".apk")}
+    className={cn(
+      "rounded-lg px-4 py-2 text-xs font-medium transition hover:scale-105",
+      darkMode
+        ? "border border-sky-400/20 bg-sky-500/20 text-sky-300"
+        : "bg-sky-600 text-white"
+    )}
+  >
+    {project.demo.endsWith(".apk") ? "Download APK" : "Live Demo"}
+  </a>
+) : (
+  <span
+    className={cn(
+      "rounded-lg px-4 py-2 text-xs font-medium opacity-70",
+      darkMode
+        ? "border border-white/10 bg-white/5 text-slate-400"
+        : "bg-slate-100 text-slate-500"
+    )}
+  >
+    Demo Soon
+  </span>
+)}
               </div>
             </GlassCard>
           </motion.div>
