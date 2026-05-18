@@ -969,7 +969,7 @@ function ProjectsSection({ darkMode }) {
     "A modern Flutter-based habit tracking app that helps users build consistency by tracking daily streaks for multiple habits. It includes dark mode, local data storage, animations, confetti celebration, custom app icon, splash screen, and a clean premium UI.",
   tech: ["Flutter", "Dart", "SharedPreferences"],
   github: "YOUR_GITHUB_LINK_HERE",
-  demo: "https://drive.google.com/file/d/1HX4SbwC5r1O7CaSPpQXsMSR8Ob03oiZ6/view?usp=sharing",
+  demo: "https://drive.google.com/uc?export=download&id=1HX4SbwC5r1O7CaSPpQXsMSR8Ob03oiZ6",
   image: "/projects/habit-streak-app.png",
 },
   ];
