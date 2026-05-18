@@ -962,6 +962,16 @@ function ProjectsSection({ darkMode }) {
       demo: "",
       image: "/projects/research image.png",
     },
+    {
+  title: "Habit Streak Tracker",
+  tag: "Mobile App",
+  description:
+    "A modern Flutter-based habit tracking app that helps users build consistency by tracking daily streaks for multiple habits. It includes dark mode, local data storage, animations, confetti celebration, custom app icon, splash screen, and a clean premium UI.",
+  tech: ["Flutter", "Dart", "SharedPreferences"],
+  github: "YOUR_GITHUB_LINK_HERE",
+  demo: "/downloads/habit-streak-tracker.apk",
+  image: "/projects/habit-streak-app.png",
+},
   ];
 
   return (
