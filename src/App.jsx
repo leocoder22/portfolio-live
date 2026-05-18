@@ -971,7 +971,8 @@ function ProjectsSection({ darkMode }) {
   github: "YOUR_GITHUB_LINK_HERE",
   demo: "https://drive.google.com/uc?export=download&id=1HX4SbwC5r1O7CaSPpQXsMSR8Ob03oiZ6",
   image: "/projects/habit-streak-app.png",
-},
+  note: "Note: Google Drive may show a warning. Click 'Download anyway' — this is normal for APK files."
+}
   ];
 
   return (
@@ -1062,50 +1063,57 @@ function ProjectsSection({ darkMode }) {
                 ))}
               </div>
 
-              {/* Links */}
-              <div className="mt-5 flex flex-wrap gap-3">
-                <a
-                  href={project.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={cn(
-                    "rounded-lg border px-4 py-2 text-xs font-medium transition hover:scale-105",
-                    darkMode
-                      ? "border-white/10 bg-white/5 text-white"
-                      : "bg-slate-100 text-slate-800"
-                  )}
-                >
-                  GitHub
-                </a>
-
-                {project.demo ? (
+             {/* Links */}
+<div className="mt-5 flex flex-wrap gap-3">
   <a
-    href={project.demo}
+    href={project.github}
     target="_blank"
     rel="noopener noreferrer"
-    download={project.demo.endsWith(".apk") ? "📱 Download APK" : "🌐 Live Demo"}
     className={cn(
-      "rounded-lg px-4 py-2 text-xs font-medium transition hover:scale-105",
+      "rounded-lg border px-4 py-2 text-xs font-medium transition hover:scale-105",
       darkMode
-        ? "border border-sky-400/20 bg-sky-500/20 text-sky-300"
-        : "bg-sky-600 text-white"
+        ? "border-white/10 bg-white/5 text-white"
+        : "bg-slate-100 text-slate-800"
     )}
   >
-    {project.demo.endsWith(".apk") ? "Download APK" : "Live Demo"}
+    GitHub
   </a>
-) : (
-  <span
-    className={cn(
-      "rounded-lg px-4 py-2 text-xs font-medium opacity-70",
-      darkMode
-        ? "border border-white/10 bg-white/5 text-slate-400"
-        : "bg-slate-100 text-slate-500"
-    )}
-  >
-    Demo Soon
-  </span>
+
+  {project.demo ? (
+    <a
+      href={project.demo}
+      target="_blank"
+      rel="noopener noreferrer"
+      download={project.demo.endsWith(".apk")}
+      className={cn(
+        "rounded-lg px-4 py-2 text-xs font-medium transition hover:scale-105",
+        darkMode
+          ? "border border-sky-400/20 bg-sky-500/20 text-sky-300"
+          : "bg-sky-600 text-white"
+      )}
+    >
+      {project.demo.endsWith(".apk") ? "Download APK" : "Live Demo"}
+    </a>
+  ) : (
+    <span
+      className={cn(
+        "rounded-lg px-4 py-2 text-xs font-medium opacity-70",
+        darkMode
+          ? "border border-white/10 bg-white/5 text-slate-400"
+          : "bg-slate-100 text-slate-500"
+      )}
+    >
+      Demo Soon
+    </span>
+  )}
+</div>
+
+{/* 👇 ADD THIS HERE */}
+{project.note && (
+  <p className="mt-2 text-xs text-amber-400">
+    {project.note}
+  </p>
 )}
-              </div>
             </GlassCard>
           </motion.div>
         ))}
