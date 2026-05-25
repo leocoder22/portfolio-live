@@ -972,7 +972,17 @@ function ProjectsSection({ darkMode }) {
   demo: "https://drive.google.com/uc?export=download&id=1HX4SbwC5r1O7CaSPpQXsMSR8Ob03oiZ6",
   image: "/projects/habit-streak-app.png",
   note: "Note: Google Drive may show a warning. Click 'Download anyway' — this is normal for APK files."
-}
+},
+    {
+  title: "MAHATROPACON 2026",
+  tag: "Conference Website",
+  description:
+    "Developed and designed the official website for MAHATROPACON 2026 featuring event details, registration flows, schedules, committee information, and a modern responsive UI for conference attendees.",
+  tech: ["React", "Next.js", "Tailwind CSS"],
+  github: "",
+  demo: "https://mahatropacon2026.com",
+  image: "/projects/mahatropacon.png",
+},
   ];
 
   return (
