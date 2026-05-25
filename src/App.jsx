@@ -980,7 +980,7 @@ function ProjectsSection({ darkMode }) {
     "Developed and designed the official website for MAHATROPACON 2026 featuring event details, registration flows, schedules, committee information, and a modern responsive UI for conference attendees.",
   tech: ["React", "Next.js", "Tailwind CSS"],
   github: "",
-  demo: "https://mahatropacon2026.com",
+  demo: "https://www.mahatropacon2026.com/",
   image: "/projects/mahatropacon.png",
 },
   ];
