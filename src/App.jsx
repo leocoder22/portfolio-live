@@ -968,7 +968,7 @@ function ProjectsSection({ darkMode }) {
   description:
     "A modern Flutter-based habit tracking app that helps users build consistency by tracking daily streaks for multiple habits. It includes dark mode, local data storage, animations, confetti celebration, custom app icon, splash screen, and a clean premium UI.",
   tech: ["Flutter", "Dart", "SharedPreferences"],
-  github: "YOUR_GITHUB_LINK_HERE",
+  github: "https://github.com/leocoder22/Flutter-Streak-App",
   demo: "https://drive.google.com/uc?export=download&id=1HX4SbwC5r1O7CaSPpQXsMSR8Ob03oiZ6",
   image: "/projects/habit-streak-app.png",
   note: "Note: Google Drive may show a warning. Click 'Download anyway' — this is normal for APK files."
@@ -979,7 +979,7 @@ function ProjectsSection({ darkMode }) {
   description:
     "Developed and designed the official website for MAHATROPACON 2026 featuring event details, registration flows, schedules, committee information, and a modern responsive UI for conference attendees.",
   tech: ["React", "Next.js", "Tailwind CSS"],
-  github: "",
+  github: "https://github.com/leocoder22/Medical-Conference-Website",
   demo: "https://www.mahatropacon2026.com/",
   image: "/projects/mahatropacon.png",
 },
