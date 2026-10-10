@@ -163,7 +163,7 @@ function App() {
   const muted = darkMode ? "text-stone-400" : "text-stone-500";
 
   return (
-    <div className={cn("min-h-screen overflow-x-hidden transition-colors duration-500", darkMode ? "bg-[#101114] text-[#f4f3ef]" : "bg-[#f7f6f2] text-[#1d1d20]")}>
+    <div className={cn("min-h-screen overflow-x-hidden transition-colors duration-500", darkMode ? "bg-[#101114] text-[#f4f3ef]" : "bg-[#e9ebef] text-[#1d1d20]")}>
       <AnimatePresence>
         {themeTransition && (
           <motion.div
@@ -171,7 +171,7 @@ function App() {
             animate={{ clipPath: `circle(${themeTransition.radius}px at ${themeTransition.x}px ${themeTransition.y}px)` }}
             exit={{ opacity: 0 }}
             transition={{ clipPath: { duration: 0.58, ease: [0.22, 1, 0.36, 1] }, opacity: { duration: 0.18 } }}
-            className={cn("pointer-events-none fixed inset-0 z-[100]", themeTransition.nextDarkMode ? "bg-[#101114]" : "bg-[#f7f6f2]")}
+            className={cn("pointer-events-none fixed inset-0 z-[100]", themeTransition.nextDarkMode ? "bg-[#101114]" : "bg-[#e9ebef]")}
           />
         )}
       </AnimatePresence>
